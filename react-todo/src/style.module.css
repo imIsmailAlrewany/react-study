@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.todoHeader {
+  background-color: royalblue;
+  color: #fff;
+  padding: 40px 50px;
+}
+
+.todoHeader .heading {
+  font-size: 2.5rem;
+}
+
+.todoBody {
+  margin: 0 50px;
+}
+
+.todoBody .todoForm,
+.todoList .listItem {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todoForm .todoInput,
+.todoForm .submit,
+.todoList .listItem button {
+  outline: none;
+  border: none;
+  padding: 10px;
+  color: #333;
+  font-size: 1.7rem;
+}
+
+.todoForm .todoInput {
+  flex: 1;
+}
+
+.todoForm .submit,
+.todoList .listItem button {
+  color: #fff;
+  background-color: tomato;
+  cursor: pointer;
+}
+
+.todoList .listItem h3 {
+  font-size: 1.5rem;
+  padding: 0 10px;
+}
+
+.todoList .listItem h3::first-letter {
+  text-transform: uppercase;
+}
+
+.todoList .listItem button {
+  font-size: 1.3rem;
+}
