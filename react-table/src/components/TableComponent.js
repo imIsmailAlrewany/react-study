@@ -1,8 +1,13 @@
+import styles from '../style.module.css';
 import RowComponent from './RowComponent';
 
-const TableComponent = () => {
+const TableComponent = ({ row, cell }) => {
   return (
-    <RowComponent></RowComponent>
+    <table className={styles.table}>
+      <tbody>
+        {Array(row).fill(row).map((r, i) => <RowComponent key={i} cell={cell}></RowComponent>)}
+      </tbody>
+    </table>
   );
 };
 
